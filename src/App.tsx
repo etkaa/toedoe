@@ -1,8 +1,11 @@
+import Auth from "./Components/Auth/Auth";
+import { Routes, Route } from "react-router-dom";
+
 function App() {
   return (
-    <div className="flex h-screen w-screen items-center justify-center">
-      <h1 className="text-xl text-slate-200">App</h1>
-    </div>
+    <Routes>
+      <Route path="/" element={<Auth />} />
+    </Routes>
   );
 }
 
