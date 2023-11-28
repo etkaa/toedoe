@@ -17,7 +17,7 @@ const GetStarted: React.FC = () => {
   return (
     <div className="flex w-full max-w-[22rem] flex-col items-center justify-center gap-4 rounded-lg bg-slate-900 px-4 py-6 shadow-2xl">
       <form
-        className="flex w-full flex-col items-center justify-center gap-3"
+        className="flex w-full flex-col items-center justify-center gap-3 px-2"
         onSubmit={handleFormSubmit}
       >
         <h1 className="text-[2rem] text-slate-200">Get Started</h1>
@@ -73,7 +73,7 @@ const GetStarted: React.FC = () => {
         </div>
       </div>
       {isReturning ? (
-        <h1 className="group text-[0.9rem] text-slate-400">
+        <h1 className="group text-center text-[0.9rem] text-slate-400">
           No account?{" "}
           <span
             className="cursor-pointer font-semibold transition duration-200 group-hover:text-slate-100"
@@ -85,7 +85,7 @@ const GetStarted: React.FC = () => {
           </span>
         </h1>
       ) : (
-        <h1 className="group text-[0.9rem] text-slate-400">
+        <h1 className="group text-center text-[0.9rem] text-slate-400">
           Have an account?{" "}
           <span
             className="cursor-pointer font-semibold transition duration-200 group-hover:text-slate-100"

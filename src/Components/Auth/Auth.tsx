@@ -10,7 +10,7 @@ const Auth: React.FC = () => {
           loading="lazy"
         />
       </div>
-      <div className="flex w-[30%] min-w-[30rem] items-center justify-center max-lg:absolute max-lg:top-1/2 max-lg:z-10 max-lg:h-[70%] max-lg:w-full max-lg:-translate-y-1/2 max-md:mx-auto">
+      <div className="flex w-[30%] items-center justify-center px-4 max-lg:absolute max-lg:top-1/2 max-lg:z-10 max-lg:h-[70%] max-lg:w-full max-lg:-translate-y-1/2 max-md:mx-auto lg:min-w-[30rem]">
         <GetStarted />
       </div>
     </div>
