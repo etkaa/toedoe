@@ -76,7 +76,7 @@ const Navbar: React.FC<NavbarProps> = ({
       </div>
       <div
         className={`
-        absolute right-0 top-0 z-10 flex h-screen 
+        absolute right-0 top-0 z-10 flex h-[100dvh] 
         overflow-x-hidden bg-slate-800 shadow-xl transition-all duration-[500ms]
         ${
           isMenuOpen
