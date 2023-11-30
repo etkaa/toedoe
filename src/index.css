@@ -8,5 +8,5 @@
 
 body {
   /* gradient from slate-800 to slate-900 */
-  @apply min-h-screen w-screen bg-gradient-to-b from-gray-950 to-gray-900;
+  @apply min-h-[100dvh] w-screen bg-gradient-to-b from-gray-950 to-gray-900;
 }

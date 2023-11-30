@@ -50,7 +50,7 @@ const Sidebar: React.FC<SidebarProps> = ({
 
   return (
     <div
-      className={`flex min-h-screen w-full max-w-[25rem] flex-col bg-slate-800 px-6 py-5 max-lg:hidden ${
+      className={`flex min-h-[100dvh] w-full max-w-[25rem] flex-col bg-slate-800 px-6 py-5 max-lg:hidden ${
         isSideBarOpen && "translate-x-0"
       } ${!isSideBarOpen && "-translate-x-full"} transition duration-300`}
     >
@@ -80,7 +80,7 @@ const Sidebar: React.FC<SidebarProps> = ({
               >
                 <div className="flex justify-between">
                   <h1 className="text-slate-200">{list.name}</h1>
-                  <span className="text-lg font-thin text-slate-400 group-hover:text-slate-200 tranition duration-[400ms]">
+                  <span className="tranition text-lg font-thin text-slate-400 duration-[400ms] group-hover:text-slate-200">
                     {list.items.length}
                   </span>
                 </div>
@@ -113,7 +113,9 @@ const Sidebar: React.FC<SidebarProps> = ({
           <h1 className="text-lg text-slate-200">Etka</h1>
         </div>
         <SettingsIcon
-          styles={"w-7 h-7 text-slate-400 group-hover:text-slate-200 transition duration-300"}
+          styles={
+            "w-7 h-7 text-slate-400 group-hover:text-slate-200 transition duration-300"
+          }
         />
       </div>
     </div>
