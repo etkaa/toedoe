@@ -16,22 +16,22 @@ const Home = () => {
         setIsMenuOpen={setIsMenuOpen}
         listId={listId}
       />
-      {!isSideBarOpen && (
+      <Sidebar
+        listId={listId}
+        isSideBarOpen={isSideBarOpen}
+        setIsSideBarOpen={setIsSideBarOpen}
+      />
+      <div className="relative flex flex-col">
         <div
-          className="absolute left-5 top-6 cursor-pointer transition duration-300 hover:bg-slate-700 max-lg:hidden"
+          className={`absolute left-5 top-6 cursor-pointer rounded-lg text-slate-100 transition-all duration-200 ease-in-out max-lg:hidden ${
+            !isSideBarOpen ? "visible opacity-100" : "invisible opacity-0"
+          }`}
           onClick={() => {
             setIsSideBarOpen(true);
           }}
         >
           <SidebarIcon styles={"w-7 h-7"} />
         </div>
-      )}
-      <Sidebar
-        listId={listId}
-        isSideBarOpen={isSideBarOpen}
-        setIsSideBarOpen={setIsSideBarOpen}
-      />
-      <div className="flex flex-col">
         <div id="cover-image" className="w-full"></div>
       </div>
     </div>
