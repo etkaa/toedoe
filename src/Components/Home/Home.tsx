@@ -11,7 +11,7 @@ const Home = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   return (
-    <div className="flex h-full w-full max-lg:flex-col">
+    <div className="relative flex h-full w-full max-lg:flex-col">
       <Navbar
         isMenuOpen={isMenuOpen}
         setIsMenuOpen={setIsMenuOpen}
@@ -24,7 +24,7 @@ const Home = () => {
           setIsSideBarOpen={setIsSideBarOpen}
         />
       </div>
-      <div className="mx-auto flex h-full w-full justify-center px-4 [3560px]:scale-200">
+      <div className="mx-auto flex h-full w-full justify-center px-4">
         <List />
       </div>
       <div
