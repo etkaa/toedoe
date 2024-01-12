@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router";
 
 type InputChangeEvent = React.ChangeEvent<HTMLInputElement>;
 
@@ -8,8 +9,12 @@ const GetStarted: React.FC = () => {
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
 
+  const navigate = useNavigate();
+
   const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    // For ease of development, remove once API is implemented
+    navigate("/dashboard/1");
     // API call here
     console.log("Form submitted");
   };

@@ -50,14 +50,14 @@ const Sidebar: React.FC<SidebarProps> = ({
 
   return (
     <div
-      className={`flex min-h-[100dvh] flex-col overflow-hidden bg-slate-800 transition-all 
+      className={`flex min-h-[100dvh] flex-col overflow-hidden bg-slate-900 transition-all 
       duration-[300ms] ease-in-out max-lg:hidden ${
-        isSideBarOpen ? "w-[25rem]" : "w-0"
+        isSideBarOpen ? "w-[20rem]" : "w-0"
       } `}
     >
       <div
         id="content-wrapper"
-        className="flex h-full w-[25rem] flex-col px-6 py-5"
+        className="flex h-full w-[20rem] flex-col px-6 py-5"
       >
         <div className="flex items-center justify-between">
           <h1 className="text-2xl tracking-wide text-slate-200">My Lists</h1>
