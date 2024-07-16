@@ -71,7 +71,7 @@ const List = () => {
         className="group relative flex h-[15rem] w-full rounded-xl bg-gradient-to-r from-gray-900 to-gray-950"
       >
         <img
-          src="https://source.unsplash.com/random/910x540/?city,night"
+          src="https://images.unsplash.com/photo-1505691723518-36a5ac3be353?q=80&w=4896&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="list-cover-image"
           className="h-[15rem] w-full rounded-xl object-cover"
         />
